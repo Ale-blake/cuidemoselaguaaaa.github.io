@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Protejamos el Agua</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primario: #2196F3;
+      --secundario: #E3F2FD;
+      --texto: #333;
+      --fondo: #f9f9f9;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Bungee', sans-serif;
+      background-color: var(--fondo);
+      color: var(--texto);
+    }
+
+    header {
+      background: linear-gradient(to right, #2196F3, #03A9F4);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      z-index: 2;
+      position: relative;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      z-index: 2;
+      position: relative;
+    }
+
+    .header-image-container {
+      position: relative;
+      margin: 25px auto 0;
+      width: 60%;
+      max-width: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5),
+                  0 10px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      position: relative;
+      z-index: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .header-image-container:hover img {
+      transform: scale(1.03);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6),
+                  0 15px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .header-image-container::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.5) 100%);
+      border-radius: 12px;
+      transition: background 0.3s ease;
+    }
+
+    .header-image-container:hover::after {
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.65) 100%);
+    }
+
+    .contenedor {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-left: 8px solid var(--primario);
+      border-radius: 5px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    section h2 {
+      color: var(--primario);
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .banner {
+      background-color: var(--secundario);
+      text-align: center;
+      padding: 20px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background-color: #0D47A1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .section-image {
+      display: block;
+      max-width: 100%;
+      width: 80%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section-image:hover {
+      transform: scale(1.03);
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Estilo del botón regresar */
+    .btn-regresar {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1em;
+      text-align: center;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-regresar:hover {
+      background-color: #388E3C;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Protejamos el Agua</h1>
+    <p>Una misión que empieza contigo</p>
+    <div class="header-image-container">
+      <img
+        src="https://media.licdn.com/dms/image/v2/D4E12AQFUt53rO9kvFA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1679595348148?e=2147483647&v=beta&t=B65MJvwoh34CGf9ppMPYrwdkaGdIw-xD_XlpG1nW1_s"
+        alt="Una misión que empieza contigo"
+      />
+    </div>
+  </header>
+
+  <div class="contenedor">
+    <div class="banner">
+      🌎 Cada gota cuenta. ¡Ayúdanos a conservar este recurso vital!
+    </div>
+
+    <section>
+      <h2>La crisis del agua</h2>
+      <p>
+        Más de 2 mil millones de personas en el mundo carecen de acceso a agua
+        potable segura. El mal uso y la contaminación del agua dulce afectan la
+        vida de millones de seres vivos.
+      </p>
+    
+      <h2>Contribuye a una cultura del agua</h2>
+      <p>Habla con tu familia, vecinos y amigos. Participa en campañas educativas, comparte información en redes sociales y apoya leyes que protejan nuestras fuentes hídricas.</p>
+      <div style="text-align: center; margin: 2rem 0;">
+        <h2>¿Qué podemos hacer para cuidar el agua?</h2>
+        <iframe width="560" height="315" src="¿QUÉ PODEMOS HACER PARA CUIDAR EL AGUA_ 🌎💧💡.mp4"
+          title="¿Qué podemos hacer para cuidar el agua?" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section>
+      <h2>Formas de cuidar el agua en casa</h2>
+      <ul>
+        <li>Duchas cortas de máximo 5 minutos.</li>
+        <li>No usar el inodoro como papelera.</li>
+        <li>Instalar dispositivos ahorradores en grifos y regaderas.</li>
+        <li>Utilizar la lavadora solo con cargas completas.</li>
+        <li>Reutilizar el agua siempre que sea posible (como el agua de lavar frutas para regar plantas).</li>
+      </ul>
+      <img class="section-image" src="https://www.caosyciencia.com/wp-content/uploads/2025/01/como-ahorrar-agua-en-casa-y-escuela-1024x647.jpg" alt="Cuidado en casa">
+    </section>
+
+    <section>
+      <h2>Contribuye a una cultura del agua</h2>
+      <p>
+        Habla con tu familia, vecinos y amigos. Participa en campañas educativas,
+        comparte información en redes sociales y apoya leyes que protejan nuestras fuentes hídricas.
+      </p>
+      <img class="section-image" src="https://see.michoacan.gob.mx/wp-content/uploads/2024/04/cuidemosagua.jpg" alt="Cuidado en escuela">
+    </section>
+
+    <!-- Botón de Regresar -->
+    <div style="text-align: center; margin: 40px 0;">
+      <button onclick="history.back()" class="btn-regresar">← Regresar</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Protejamos el Agua | Hecho con conciencia ambiental
+  </body>
+</html>
